@@ -1,0 +1,276 @@
+* {
+	 text-align: center;
+	 margin:0px;
+	 padding:0px;
+	 margin:0px;
+
+}
+div#topbar{
+	background: white;
+	background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 0),linear-gradient(rgba(200,0,0,.5) 50%, transparent 0);
+	background-size: 30px 30px; 
+	height:60px;
+	opacity: 1;
+	
+}
+
+#comments{
+	padding: 10px;
+	font-size: 2em;
+}
+img{
+	float:left;
+	width:108px;
+	height:50px;
+	margin:3px 0px 0px 15px;
+	font-size:36px;
+	color:#999;
+}
+div#topbar > #sections_btn_holder{
+	float:left;
+	width:144px;
+	height:46px;
+	padding:20px;
+	
+}
+div#topbar > #sections_btn_holder > button{ 
+	background:#F90;
+
+}
+div#topbar > #sections_panel{
+	position:absolute;
+	height:0px;
+	width:550px;
+	background:#ccc;
+	top:60px;
+	left:160px;
+	border-radius:0px 0px 8px 8px;
+	overflow:hidden;
+	z-index:10000;
+	transition: height 0.3s linear 0s;
+
+}
+div#topbar > #sections_panel > div{
+	background:#333;
+	padding:20px;
+	height:220px;
+	margin:10px;
+	color:#FC0;
+	
+}
+marquee{
+	font-size: 50px;
+}
+div#letters{
+	position: absolute;
+	left: 300px;
+	top: 1px;
+
+}
+
+#birthdate-names{
+	
+	position: absolute;
+	
+	width: 150px;
+	font-size: 17px;
+	color: solid black;
+	padding-top: 10px;
+	font-family: cursive;
+	font-weight: bolder;
+	float:left;
+	
+
+}
+
+#say-board-img{
+	background: white;
+	background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 0),linear-gradient(rgba(200,0,0,.5) 50%, transparent 0);
+	background-size: 30px 30px;
+	position: absolute;
+	margin:0% 0% 0% 20%;
+	border: 1px solid black;
+	height: 490px;
+	width: 600px;
+}
+
+/*#say-board-img{
+	position: absolute;
+	margin:0% 0% 0% 20%;
+	border: 1px solid black;
+	height: 500px;
+	width: 550px;
+}*/
+
+#birthday-month{
+	position: absolute;
+	margin:-4% 0% 0% 7%;
+	
+	text-align: center;
+	font-size: 25px;
+	color: solid black;
+	font-weight: bolder;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-family: cursive;
+	
+}
+
+
+
+
+
+#wss{
+	opacity:1;
+	-webkit-transition:opacity 1.0s linear 0s;
+	transition:opacity 1.0s linear 0s;
+	position: absolute;
+	text-align: center;
+	width: 300px;
+	left: 390px;
+	height: 150px;
+	top: 340px;
+}
+
+h1 #wss span{
+	opacity:1;
+	-webkit-transition:opacity 1.0s linear 0s;
+	transition:opacity 1.0s linear 0s;
+	position: absolute;
+	text-align: center;
+	width: 300px;
+	left: 390px;
+	height: 150px;
+	top: 340px;
+}
+
+#boll {
+	position: relative;
+	margin: -5% 10% 2% 2%;
+	width: 220px;
+	height: 550px;
+	opacity: .35;
+	padding: 10px;
+	text-align:center;
+}
+
+
+
+
+#block-quotes{
+	text-align: center;
+	position: absolute;
+	left: 550px;
+	top: 505px;
+}
+
+
+
+
+ #birthday-name-button, #birthday-month-button, #safe-day-button{
+		color: red;
+		font-family: sans-serif;
+}
+
+#days-without{
+	width:150px;
+	position: relative;
+	left: 250px;
+	top: -500px;
+	font-size:1.3em;
+	
+
+}
+
+#safe-days{
+	color:#ca0808;
+	position: relative;
+	font-size: 3em;
+	left: -410px;
+	top: 320px;
+}
+
+.name_saying {
+
+	position: relative;
+	left: 300px;
+
+}
+
+#safetySaying {
+	position: absolute;
+	top: 650px;
+	left: 400px;
+	width: 100px;
+	height: auto;
+	padding:  3px;
+	text-align: center;
+	background-color: red;
+	color: white;
+}
+
+#deleteSaying{
+	position: absolute;
+	top: 650px;
+	left: 570px;
+	width: 120px;
+	height: auto;
+	padding:  3px;
+	text-align: center;
+	background-color: red;
+	color: white;
+}
+
+#happy-birthday {
+	font-size:2em;
+	color: red;
+	position: absolute;
+	top: 465px;
+	left:900px;
+}
+
+#happy-birthday-names {
+	font-size:1.3em;
+	color: red;
+	position: absolute;
+	top: 500px;
+	left:900px;
+}
+
+.form {
+	position: relative;
+	width: 200px;
+	height: auto;
+
+
+}
+
+.normal { 
+  width:25%;
+  height:25%;
+  background: #f00;
+}
+
+.active { 
+  width:100%;
+  height:100%;
+  background: blue;
+}
+
+#div{
+	position: absolute;
+	margin:-1% 0% 0% -5%;
+	
+	height: 600px;
+	width: 650px;
+}
+
+
+
+
+
+
+
+
+
+

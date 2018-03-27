@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta ="author" content="Rogers Brewer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>LET'S TALK</title> 
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+
+
+<body id="page-top">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+ <div class="container">
+  <ul class="nav nav-pills">
+    <li><a href="#">Home</a></li>
+    <li class="active"><a href="#">Production Line 1</a></li>
+    <li><a href="#">Production Line 2</a></li>
+    <li><a href="#">Production Line 3</a></li>
+  </ul>
+  
+
+  <div id='first-shift-container'><a class="nav-link" href="#first-shift"><button type="button" id="btn-one">First Shift </button></a>
+   <button type="button" id="add-new-line" onclick="addItem(event)">Add New<br>Line</button>
+  </div>
+  
+
+   <div id='second-shift-container'><a class="nav-link" href="#second-shift"><button type="button" id="btn-two">Second Shift </button></a>
+   <button type="button" id="add-new-line-two" onclick="addItemTwo(event)">Add New<br> Line</button>
+   </div>
+
+    <div id='third-shift-container'><a class="nav-link" href="#third-shift"><button type="button" id="btn-three">Third Shift </button></a>
+  <button type="button" id="add-new-line-three" onclick="addItemThree(event)">Add New<br> Line</button>     
+  </div> 
+
+  
+  
+
+   <div id='start-end-date'>
+    <p>Start Date:  <input type="date" ></p>
+    <p>Ending Date: <input type="date" ></p>
+  </div>                 
+  
+</nav>
+</div>    
+    <!-- Navigation -->
+
+ <section id="first-shift"> 
+    <div class="container-fluid text-center">    
+      <div class="row content">
+       
+    <div class="col-lg-12 text-left"> 
+      <h1 class="shift">First Shift</h1>
+
+     
+       
+
+    <table>
+    <h6>Fill in your info,then push add new line. You can only clear the last and must have the password!!</h6>
+      <tr>
+        <th>Date / Time</th>
+        <th> Time Loss </th>
+        <th>Reason For Loss Time </th>
+        <th>Action Taken</th>
+        <th>Waste</th>
+        <th>#Lbs.<br> Of Waste</th>
+        <th>Int.</th>
+      </tr>
+      <tbody id="list">
+        <tr>
+        <td>
+            <input type="text" size="30" title="Date/Time" id="date" placeholder="No need to write a date">
+          </td>
+        
+          <td>                   
+              <input type="text" size="5" title="Loss Time"  id="loss-time" class='time_loss'> 
+          </td>
+          <td>
+             <input type="text" size="60"  title="Reason For Loss Time" placeholder="Reason For Loss Time" id="reason-loss-time">
+          </td>
+          <td>
+            <select title="Action Taken" id="action-taken">
+                <option>N/A</option>
+                <option>Call Supervisor</option>
+                <option>Call Engineering</option>
+                <option>Fixed It Your Self </option>
+                <option>Some-one Else Help You</option>
+                <option>Didn't Get Fix</option>        
+             </select>
+          </td>
+          <td>
+            <select title="Waste" id="waste">
+                <option>N/A</option>
+                <option>Flour</option>
+                <option>Dough</option>
+                <option>Bags </option>
+                <option>Clean Up</option>
+                <option>Trash</option>        
+             </select>
+          </td>
+           <td>
+            <input type="text" size="5" title="Number of Lbs." id="number-lbs">
+          </td>
+          <td>
+            <input type="text" size="5" title="Employee Name  " id="employee-name">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="second-shift">
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav"> </div>
+    <div class="col-lg-12 text-left"> 
+      <h1 class="shift">Second Shift</h1>
+      
+       
+      <!-- <input type="date" id="date"> -->
+   
+
+    <table>
+      <h6>Fill in your info,then push add new line. You can only clear the last and must have the password!!</h6>
+      <tr>
+        <th>Date / Time</th>
+        <th> Time Loss </th>
+        <th>Reason For Loss Time </th>
+        <th>Action Taken</th>
+        <th>Waste</th>
+        <th>#Lbs.<br> Of Waste</th>
+        <th>Int.</th>
+      </tr>
+      <tbody id="list-two">
+        <tr>
+        <td>
+            <input type="text" size="30" title="Date/Time" id="date-two" placeholder="No need to write a date">
+          </td>
+          <td>                   
+              <input type="text" size="5" title="Loss Time"  id="loss-time-two"> 
+          </td>
+          <td>
+             <input type="text" size="67"  title="Reason For Loss Time" placeholder="Reason For Loss Time" id="reason-loss-time-two">
+          </td>
+          <td>
+            <select title="Action Taken" id="action-taken-two">
+                <option></option>
+                <option>Call Supervisor</option>
+                <option>Call Engineering</option>
+                <option>Fixed It Your Self </option>
+                <option>Some-one Else Help You</option>
+                <option>Didn't Get Fix</option>               
+             </select>
+          </td>
+          <td>
+            <select title="Waste" id="waste-two">
+                <option>N/A</option>
+                <option>Flour</option>
+                <option>Dough</option>
+                <option>Bags </option>
+                <option>Clean Up</option>
+                <option>Trash</option>        
+             </select>
+          </td>
+           <td>
+            <input type="text" size="5" title="Number of Lbs." id="number-lbs-two">
+          </td>
+          <td>
+            <input type="text" size="5" title="Employee Name  " id="employee-name-two">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+    
+
+    
+  </div>
+ </div>
+<hr>
+
+</section>
+
+<section id="third-shift">
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav"> </div>
+    <div class="col-lg-12 text-left"> 
+      <h1 class="shift">Third Shift</h1>
+      
+      <table>
+      <h6>Fill in your info,then push add new line. You can only clear the last and must have the password!!</h6>
+      <tr>
+        <th>Time</th>
+        <th> Time Loss </th>
+        <th>Reason For Loss Time </th>
+        <th>Action Taken</th>
+        <th>Waste</th>
+        <th>#Lbs.<br> Of Waste</th>
+        <th>Int.</th>
+      </tr>
+      <tbody id="list-three">
+        <tr>
+          <td>
+            <input type="text" size="30" title="Date/Time" id="date-three" placeholder="No need to write a date">
+          </td>
+          <td>                   
+              <input type="text" size="5" title="Loss Time"  id="loss-time-three"> 
+          </td>
+          <td>
+             <input type="text" size="67"  title="Reason For Loss Time" placeholder="Reason For Loss Time" id="reason-loss-time-three">
+          </td>
+          <td>
+            <select title="Action Taken" id="action-taken-three">
+                <option></option>
+                <option>Call Supervisor</option>
+                <option>Call Engineering</option>
+                <option>Fixed It Your Self </option>
+                <option>Some-one Else Help You</option>
+                <option>Didn't Get Fix</option>              
+             </select>
+          </td>
+          <td>
+            <select title="Waste" id="waste-three">
+                <option>N/A</option>
+                <option>Flour</option>
+                <option>Dough</option>
+                <option>Bags </option>
+                <option>Clean Up</option>
+                <option>Trash</option>        
+             </select>
+          </td>
+           <td>
+            <input type="text" size="5" title="Number of Lbs." id="number-lbs-three">
+          </td>
+          <td>
+            <input type="text" size="5" title="Employee Name  " id="employee-name-three">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+    
+
+    
+</div>
+<hr>
+</section>
+
+
+
+
+
+
+
+
+    
+
+         
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/line_one.js"></script>
+    <script type="text/javascript" src="js/line_two.js"></script>
+    <script type="text/javascript" src="js/line_three.js"></script>
+  </body>
+</html>

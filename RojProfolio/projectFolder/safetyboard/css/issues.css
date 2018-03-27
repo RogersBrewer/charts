@@ -1,0 +1,49 @@
+
+
+/*h5{
+	font-size:x-large;
+	
+}
+.commentBox{
+	padding:1%;
+	width: 10% 80% 10% 2%;
+	border: 1px solid #000;
+	background-color: #f0f0f0;
+	margin:10px;
+	
+}
+
+#container2{
+	position: absolute;
+	left: 510px;
+	top: 300px;
+	width: 50%;
+	
+}
+
+.leftPanelImg2{
+	width: 10%;
+	float: left;
+}
+
+.leftPanelImg2 img{
+	border-radius: 100%;
+}
+
+
+.rightPanel2{
+	width: 75%;
+	float: left;
+	margin-right: 1%;
+}
+
+.clear{
+	clear: both;
+}
+
+
+/*.form input[type="text"], .form textarea, .form input[type="date"]{
+	border: 1px solid #000;
+	padding: 2px;
+	width: 300px;
+}*/

@@ -1,0 +1,225 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /*nav {
+      padding: 10px;
+      position: fixed;
+      height: 70px;
+      width: 100%;
+      background-color: blue;
+      margin: 10px;
+    }*/
+
+    .nav-link{
+      position: relative;
+      top: -30px;
+      float: right;
+    }
+
+
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+   /* .sidenav {
+      position: relative;
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }*/
+    
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+     * {
+  padding: 0px;
+  margin: 0px;
+}
+
+h6{
+  text-align: center;
+}
+
+.shift{
+  padding-top: 170px;
+  font-family: cursive;
+  text-align: center;
+  font-size: 3em;
+  
+}
+
+#first-shift-container {
+  position:relative;
+  left:-1050px;
+  top: 10px;
+  padding:20px;
+
+
+
+}
+
+#first-shift{
+  background-color:#a2b4c3;
+
+  padding: 100px 10px 100px 10px;
+}
+
+#add-new-line{
+  position: absolute;
+  margin:5px;
+  left: 1050px;
+  font-size: .7em; 
+  border-radius:20px;
+  width:100px;
+  
+  
+}
+
+#second-shift-container{
+  position:relative;
+  left:-900px;
+  top: -28px;
+  padding: 20px;
+}
+
+#second-shift{
+  background-color:#c7b595;
+  padding:100px 10px 100px 10px;
+}
+#add-new-line-two{
+  position: absolute;
+  margin:5px;
+  left: 1040px;
+   
+  font-size: .7em; 
+  border-radius:20px;
+  width:100px;
+  
+  
+}
+
+#third-shift-container{
+  position:relative;
+  left:-760px;
+  top: -70px;
+  padding:20px;
+}
+
+#third-shift{
+  
+  background-color:#6d926d;
+  padding:100px 10px 100px 10px;
+}
+
+#add-new-line-three{
+  position: absolute;
+  margin:5px;
+  left: 1050px;
+   
+  font-size: .7em; 
+  border-radius:20px;
+  width:100px;
+  
+  
+}
+
+h2{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.jumbotron {
+  margin:auto;
+  padding:20px;
+}
+   
+header{
+  margin:10px;
+  padding:30px;
+}
+
+      
+/*#container{
+  text-align: center;
+  padding: 10px;
+}*/
+
+/*#logo{
+  position: absolute;
+  left: 5px;
+  width: 150px;
+  height: 130px;
+  
+  margin: auto;
+}*/
+
+#start-end-date {
+  position: relative;
+  top: -150px;
+  left: 700px;
+}
+
+
+
+
+
+h5 {
+  position: relative;
+  left: 140px;
+}
+
+#cnb {
+  position:relative;
+  left: 150px;
+  color:red;
+  padding:0px;
+  margin:auto;
+}
+
+
+
+
+table {
+  background-color: lightgrey;
+  border-radius: 10px;
+  position: relative;
+  left: 0px;
+  top: 0px; 
+  padding: 0;
+  text-align: center;
+}        
+
+th, td  {
+  text-align: center;
+  padding: 10px;
+}
+
+td{
+  text-align: center;
+}
+
+
+th{
+  background-color: gray;
+  color: white;
+
+}
+
+
+
+
+
+
+
+tr:nth-child(even){background-color: #f2f2f2} 

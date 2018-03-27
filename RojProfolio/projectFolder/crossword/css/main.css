@@ -1,0 +1,142 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#head {
+	text-align: center;
+	font-family: cursive;
+}
+
+ /*uses to center all the boxes in body*/
+#container{
+	margin: 2%;
+}
+
+.box{
+	display: inline-block;
+	width: 8%;
+	height: 8%;
+	border: 1px solid #000000
+}
+
+div.box {
+	padding: 2px;
+	margin: 2px;
+}
+
+#bodyDiv{
+	background-color: blue;
+	padding: 5px;
+}
+
+input{
+	position: relative;
+	
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 150%;
+	text-transform: uppercase;
+}
+
+input:placeholder-shown{
+	opacity: .3;
+
+}
+
+#down-ques{
+	
+	position: relative;
+	padding: 10px;
+}
+
+.sucess{
+	background-color:#15b115;
+	color:#ffffff;
+
+}
+
+#across-ques{
+	
+	position: absolute;
+	padding: 10px;
+	
+}
+
+.fail{
+	background-color: white;
+}
+
+ #words{
+	text-align: center;
+	font-size: 80px;
+	color: red;
+
+}
+
+#mystery{
+	text-align: center;
+}
+/**** for computer or laptop screen size *****/
+@media screen and (max-width: 1260px) {
+      #container {
+        margin: 0%;
+      }
+
+     .box{
+	display: inline-block;
+	width: 7.8%;
+	height: 7.8%;
+	border: 1px solid #000000
+}
+/**** for tablet screen size *****/
+@media screen and (max-width: 760px) {
+      #container {
+        margin: 2% ;
+      }
+
+      .box{
+	display: inline-block;
+	width: 7.5%;
+	height: 7.5%;
+	border: 1px solid #000000
+
+}
+/**** for phone screen size *****/
+@media screen and (max-width: 515px) {
+      #container {
+        margin: 2% ;
+      }
+
+      .box{
+	display: inline-block;
+	width: 7.2%;
+	height: 7.2%;
+	border: 1px solid #000000
+}
+
+#down-ques{
+	text-align: center;
+	position: relative;
+	padding: 10px;
+}
+
+#across-ques{
+	position: relative;
+	padding: 10px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

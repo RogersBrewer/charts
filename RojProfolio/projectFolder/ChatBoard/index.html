@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta ="author" content="Rogers Brewer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Huddle</title> 
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    
+  </head>
+  <body>
+
+ 
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Line 1</a></li>
+        <li><a href="#">Line 2</a></li>
+        <li><a href="#">lLine 3</a></li>
+        <li><a href="#">Line 4</a></li>
+        <li><a href="#">Line 5</a></li>
+    
+      <li><a class="nav-link" href="#first-shift"><button type="button" id="btn-one">First Shift </button></a></li>
+      <li><a class="nav-link" href="#second-shift"><button type="button" id="btn-two">Second Shift </button></a></li>
+      <li><a class="nav-link" href="#third-shift"><button type="button" id="btn-three">Third Shift </button></a></li>
+      </ul>  
+      
+    </div>
+  </div>
+</nav>
+
+<!-- <div class='safety'>
+  <h1>
+    erbeberbeberbe
+  </h1>
+</div> -->
+
+        <!-- ****************
+              * First Shift *
+             **************** -->
+
+<section id="first-shift">
+<div class="container">
+
+ <!--  First Shift Loss Time -->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">First Shift Loss Time
+           <button type="button" id="add-new-line" onclick="addItem(event)">Add New Line</button>
+        </div>
+        <div class="panel-body">
+        <div id="first-shift-panel-one">
+            <table>
+              <tr>
+                <th> Time Loss </th>
+                <th>Reason For Loss Time </th>
+              </tr>
+              <tbody id="list">
+              <tr id="date-time">
+                <td>                   
+                  <input type="text" size="5" title="Loss Time"  id="loss-time" class='time_loss'> 
+                </td>
+                <td>
+                  <input type="text" size="35"  title="Reason For Loss Time" placeholder="Reason For Loss Time" id="reason-loss-time" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- First Shift Loss Time Comment Section -->
+
+        <div class="panel-footer">
+          <p class="comment">Write a comment, to help reduce time loss!!</p>
+          <form id='todo-form'>
+            <input type="text" id="todo-input">
+            <button type="button" onclick="todoList()">Click Here</button>
+          </form>
+          <ol id="todo-list">
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- First Shift Scrap -->
+
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">First Shift Scrap
+           <button type="button" id="add-new-line" onclick="scrapOne(event)">Add New Line</button>
+        </div>
+        <div class="panel-body">
+         <div id="first-shift-panel-one">
+            <table>
+              <tr>
+                <th> Scrap Loss </th>
+                <th>Reason For Scrap Loss </th>
+              </tr>
+              <tbody id="list-first-shift-one">
+              <tr id="date-time-first-shift-one">
+                <td>                   
+                  <input type="text" size="8" title="Loss Time"  id="scrap-shift-one" class='time_loss'> 
+                </td>
+                <td>
+                  <input type="text" size="35"  title="Reason For Scrap Loss " placeholder="Reason For Scrap Loss" id="reason-scrap-loss-one" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div> 
+        </div>
+
+        <!-- First Shift Scrap Comment Section -->
+
+        <div class="panel-footer">
+          <h4>Comment</h4>
+          <form id='todo-form-two'>
+            <input type="text" id="todo-input-one-two">
+            <button type="button" onclick="commentPanelOneTwo()">Click Here</button>
+          </form>
+          <ol id="comment-list-one-two">
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- First Shift Recognition -->
+
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+       <div class="panel-heading">First Shift Recognition
+           <button type="button" id="add-new-line" onclick="addItemThree(event)">Add New Line</button>
+        </div>
+        <div class="panel-body">
+         <div id="first-shift-panel-three">
+            <table>
+              <tr>
+                <th>From Who </th>
+                <th>Employee Name</th>
+              </tr>
+              <tbody id="list-first-shift-three">
+              <tr id="date-time-first-shift-three">
+                <td>                   
+                  <select title="From Who" id="from-who">
+                <option>N/A</option>
+                <option>Supervisor</option>
+                <option>Engineering</option>
+                <option>For-man</option>
+                <option>co-Worker</option>
+                <option>unknown</option>        
+             </select>
+                </td>
+                <td>
+                  <input type="text" size="30"  title="Employee Name " placeholder="Employee Name" id="employee-name" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div> 
+        </div>
+
+        <!-- First Shift Recognition Comment Section -->
+
+        <div class="panel-footer">
+          <h4>Comment</h4>
+          <form id='todo-form-three'>
+            <input type="text" id="todo-input-one-three">
+            <button type="button" onclick="commentPanelOneThree()">Click Here</button>
+          </form>
+          <ol id="todo-list-one-three">
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- ****************
+              * Second Shift *
+             **************** -->
+
+<section id="second-shift">
+<div class="container">
+ <!--  Second Shift Loss Time -->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Second Shift Loss Time
+           <button type="button" id="add-new-line" onclick="addItemSecondOne(event)">Add New Line</button>
+        </div>
+        <div class="panel-body">
+        <div id="second-shift-panel-one">
+            <table>
+              <tr>
+                <th> Time Loss </th>
+                <th>Reason For Loss Time </th>
+              </tr>
+              <tbody id="list-second-one">
+              <tr id="date-time-second-one">
+                <td>                   
+                  <input type="text" size="5" title="Loss Time"  id="loss-time-second-one" class='time_loss'> 
+                </td>
+                <td>
+                  <input type="text" size="35"  title="Reason For Loss Time" placeholder="Reason For Loss Time" id="reason-loss-time-second-one" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div>
+        </div>
+
+         <!-- Second Shift Loss Time Comment Section -->
+
+        <div class="panel-footer">
+          <h4>Comment</h4>
+          <form id='todo-form-second-one'>
+            <input type="text" id="comment-input-second-one">
+            <button type="button" onclick="commentPanelOne()">Click Here</button>
+          </form>
+          <ol id="comment-list-second-one">
+          </ol>
+        </div>
+      </div>
+    </div>
+
+              <!--***********************************
+                  *  Second Shift  Scrap  Panel Two *
+                  *********************************** -->
+   
+   
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Second Shift Scrap
+           <button type="button" id="add-new-line" onclick="addItemSecondTwo(event)">Add New Line</button>
+        </div>
+
+        <!-- Second Shift Scrap -->
+
+        <div class="panel-body">
+         <div id="second-shift-panel-one">
+            <table>
+              <tr>
+                <th> Scrap Loss </th>
+                <th>Reason For Scrap Loss </th>
+              </tr>
+              <tbody id="list-second-two">
+              <tr id="date-time-second-two">
+                <td>                   
+                  <input type="text" size="8" title="Loss Time"  id="scrap-shift-two" class='time_loss'> 
+                </td>
+                <td>
+                  <input type="text" size="35"  title="Reason For Scrap Loss " placeholder="Reason For Scrap Loss" id="reason-scrap-loss-two" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div> 
+        </div>
+
+        <!-- Second Shift Scrap Comment Section -->
+
+        <div class="panel-footer">
+          <h4>Comment</h4>
+          <form id='todo-form-two'>
+            <input type="text" id="comment-list-second-two">
+            <button type="button" onclick="commentPanelTwo ()">Click Here</button>
+          </form>
+          <ol id="todo-list-second-two">
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Shift Recognition -->
+
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+       <div class="panel-heading">Second Shift Recognition
+           <button type="button" id="add-new-line" onclick="addItemSecondThree(event)">Add New Line</button>
+        </div>
+        <div class="panel-body">
+         <div id="second-shift-panel-three">
+            <table>
+              <tr>
+                <th>From Who </th>
+                <th>Employee Name</th>
+              </tr>
+              <tbody id="list-second-three">
+              <tr id="date-time-second-three">
+                <td>                   
+                  <select title="From Who" id="from-who-second-two">
+                <option>N/A</option>
+                <option>Supervisor</option>
+                <option>Engineering</option>
+                <option>For-man</option>
+                <option>co-Worker</option>
+                <option>unknown</option>        
+             </select>
+                </td>
+                <td>
+                  <input type="text" size="30"  title="Employee Name " placeholder="Employee Name" id="employee-name-second-two" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div> 
+        </div>
+
+        <!-- Second Shift Recognition Comment Second -->
+
+        <div class="panel-footer">
+          <h4>Comment</h4>
+          <form id='todo-form-three'>
+            <input type="text" id="comment-list-second-three">
+            <button type="button" onclick="commentPanelThree()">Click Here</button>
+          </form>
+          <ol id="todo-list-comment-three">
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- ****************
+              * Third Shift *
+             **************** -->
+
+<section id="third-shift">
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Third Shift Loss Time
+           <button type="button" id="add-new-line" onclick="addItemThirdOne(event)">Add New Line</button>
+        </div>
+        <div class="panel-body">
+        <div id="third-shift-panel-one">
+            <table>
+              <tr>
+                <th> Time Loss </th>
+                <th>Reason For Loss Time </th>
+              </tr>
+              <tbody id="list-third-one">
+              <tr id="date-time-third-one">
+                <td>                   
+                  <input type="text" size="5" title="Loss Time"  id="loss-time-third-one" class='time_loss'> 
+                </td>
+                <td>
+                  <input type="text" size="35"  title="Reason For Loss Time" placeholder="Reason For Loss Time" id="reason-loss-time-third-one" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <h4>Comment</h4>
+          <form id='todo-form'>
+            <input type="text" id="comment-input-third-one">
+            <button type="button" onclick="commentPanelThirdOne()">Click Here</button>
+          </form>
+          <ol id="comment-list-third-one">
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Thrid Shift Scrap
+           <button type="button" id="add-new-line" onclick="addItemThirdTwo(event)">Add New Line</button>
+        </div>
+        <div class="panel-body">
+         <div id="first-shift-panel-one">
+            <table>
+              <tr>
+                <th> Scrap Loss </th>
+                <th>Reason For Scrap Loss </th>
+              </tr>
+              <tbody id="list-third-shift-two">
+              <tr id="date-time-third-shift-two">
+                <td>                   
+                  <input type="text" size="8" title="Loss Time"  id="scrap-third-shift" class='time_loss'> 
+                </td>
+                <td>
+                  <input type="text" size="35"  title="Reason For Scrap Loss " placeholder="Reason For Scrap Loss" id="reason-scrap-third-shift" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div> 
+        </div>
+        <div class="panel-footer">
+          <h4>Comment</h4>
+          <form id='todo-form-two'>
+            <input type="text" id="comment-input-third-two">
+            <button type="button" onclick="commentPanelThirdTwo()">Click Here</button>
+          </form>
+          <ol id="todo-list-third-two">
+          </ol>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+       <div class="panel-heading">Third Shift Recognition
+           <button type="button" id="add-new-line" onclick="addItemthirdThree(event)">Add New Line</button>
+        </div>
+        <div class="panel-body">
+         <div id="first-shift-panel-three">
+            <table>
+              <tr>
+                <th>From Who </th>
+                <th>Employee Name</th>
+              </tr>
+              <tbody id="list-third-shift-three">
+              <tr id="date-time-first-shift-three">
+                <td>                   
+                  <select title="From Who" id="from-who-third-three">
+                <option>N/A</option>
+                <option>Supervisor</option>
+                <option>Engineering</option>
+                <option>For-man</option>
+                <option>co-Worker</option>
+                <option>unknown</option>        
+             </select>
+                </td>
+                <td>
+                  <input type="text" size="30"  title="Employee Name " placeholder="Employee Name" id="employee-name-third-three" >
+                </td>
+              </tr>
+             </tbody>
+            </table>
+          </div> 
+        </div>
+        <div class="panel-footer">
+          <h4>Comment</h4>
+          <form id='todo-form-three'>
+            <input type="text" id="comment-input-third-three">
+            <button type="button" onclick="commentPanelThirdThree()">Click Here</button>
+          </form>
+          <ol id="todo-list-third-three">
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <footer class="container-fluid text-center">
+    
+<div id="div0"> charts</div>
+<div id="div1"></div>
+<div id="div3">data</div> -->
+
+ <!--  <form class="form-inline">
+    <input type="text" name="number" id="num"><br>
+    <input type="button" value="submit"  name="submit" onclick="draw()">
+    <input type="button" value="clear" name="clear" onclick="reset()"><br><br>
+
+  </form>
+    <canvas id="myCanvas" width="400" height="500" style="border: 1px solid #c3c3c3;"></canvas> -->
+
+<!-- </footer> 
+ -->
+         
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/first-shift.js"></script>
+    <script type="text/javascript" src="js/second-shift.js"></script>
+    <script type="text/javascript" src="js/third-shift.js"></script>
+  </body>
+</html>
